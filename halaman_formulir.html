@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Halaman Formulir</title>
+    <link href="halaman_formulir.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<header>
+    <img alt="Logo Itera" id="logo-header" src="assets/logoItera.jpg">
+    <h1 style="color: white">Halaman Formulir</h1>
+</header>
+<form>
+    <div class="container">
+
+        <label for="nama"><b>Nama</b></label>
+        <input id="nama" name="text" placeholder="Masukan Nama" required type="text">
+
+        <label for="email"><b>Email</b></label>
+        <input id="email" name="email" placeholder="Masukan Email" required type="text">
+
+        <label for="psw"><b>Password</b></label>
+        <input id="psw" name="psw" placeholder="Masukan Password" required type="password">
+
+        <label for="program-studi"><b>Program Studi</b></label>
+        <input id="program-studi" name="text" placeholder="Masukan Program Studi" required type="text">
+
+        <label for="alamat"><b>Masukan Alamat Anda</b></label>
+        <input id="alamat" name="text" placeholder="Masukan Alamat Anda" required type="text">
+
+        <label for="tanggal-lahir"><b>Masukan Tanggal Lahir</b></label>
+        <input id="tanggal-lahir" name="date" placeholder="Masukan Tanggal Lahir" required type="date">
+
+        <label><b>Jenis Kelamin</b></label>
+        <div id="gender">
+            <input id="laki-laki" name="jenis-kelamin" required type="radio" value="laki-laki">
+            <label for="laki-laki">Laki-laki</label>
+
+            <input id="perempuan" name="jenis-kelamin" type="radio" value="perempuan">
+            <label for="perempuan">Perempuan</label>
+        </div>
+        <hr>
+        <button class="registerbtn" onClick="onRegisterClick()" type="submit">Register</button>
+
+    </div>
+
+    <script src="halaman_formulir.js"></script>
+</form>
+</body>
+
+<script>
+    if (window.self !== window.top) {
+
+        document.body.classList.add('in-iframe');
+    }
+</script>
+
+<footer>
+    <p>Make By Love By Dimas Faturrohim</p>
+    <p><a href="https://www.instagram.com/dimassfatur/">dimasfaturrohim.02@gmail.com</a></p>
+</footer>
+</html>
